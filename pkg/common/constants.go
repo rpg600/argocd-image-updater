@@ -54,7 +54,11 @@ const (
 	WriteBackTargetAnnotation = ImageUpdaterAnnotationPrefix + "/write-back-target"
 	KustomizationPrefix       = "kustomization"
 	HelmPrefix                = "helmvalues"
+	PluginPrefix              = "plugin"
 )
+
+// The env var that will be used to set helm arguments for a plugin application type
+const DefaultPluginEnvVarName = "HELM_ARGS"
 
 // DefaultTargetFilePattern configurations related to the write-back functionality
 const DefaultTargetFilePattern = ".argocd-source-%s.yaml"
